@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>repl</title>
+</head>
+<body>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tensorflow/4.22.0/tf.js" integrity="sha512-EexLMPqUNnpWmUNzM2P1AztqNT09HDyTzji6Y3jBMqnt3Qijl9Bi7SbYyH6nd+YGLxff9n9ITZNhBvUe1cjozA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script>
+    const tensor = tf.tensor2d([1,2,3,4], [2, 2]);
+    console.log('tensor');
+    tensor.data()
+      .then(res => {
+        console.log(res);
+      })
+
+  </script>
+</body>
+</html>
